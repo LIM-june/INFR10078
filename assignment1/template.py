@@ -21,12 +21,17 @@ include generated answers.py file.
 Best of Luck!
 """
 from collections import defaultdict, Counter
+from ctypes import sizeof
+from email.policy import default
+from os import write
+from pydoc import writedoc
 
 import numpy as np  # for np.mean() and np.std()
 import nltk, sys, inspect
 import nltk.corpus.util
 from nltk import MaxentClassifier
-from nltk.corpus import brown, ppattach  # import corpora
+from nltk.corpus import brown, ppattach
+from prometheus_client import write_to_textfile  # import corpora
 
 # Import the Twitter corpus and LgramModel
 from nltk_model import *  # See the README inside the nltk_model folder for more information
@@ -145,16 +150,16 @@ def train_LM(corpus):
     :rtype: LgramModel
     :return: A padded letter bigram model based on nltk.model.NgramModel
     '''
-    raise NotImplementedError  # remove when you finish defining this function
+    # raise NotImplementedError  # remove when you finish defining this function
 
     # subset the corpus to only include all-alpha tokens,
     # converted to lower-case (_after_ the all-alpha check)
-    corpus_tokens = ...
-
+      
+    corpus_tokens = [word.lower() for word in corpus.words() if word.isalpha()]
+    
     # Return a smoothed (using the default estimator) padded bigram
     # letter language model
-    return ...
-
+    return LgramModel(n=2, train=corpus_tokens, pad_left=True, pad_right=True)
 
 # Question 2 [7 marks]
 def tweet_ent(file_name, bigram_model):
@@ -168,18 +173,27 @@ def tweet_ent(file_name, bigram_model):
     :rtype: list(tuple(float,list(str)))
     :return: ordered list of average entropies and tweets'''
 
-    raise NotImplementedError # remove when you finish defining this function
+    # raise NotImplementedError # remove when you finish defining this function
 
     # Clean up the tweet corpus to remove all non-alpha
     # tokens and tweets with less than 5 (remaining) tokens, converted
     # to lowercase
     list_of_tweets = xtwc.sents(file_name)
-    cleaned_list_of_tweets = ...
-
+    cleaned_list_of_tweets = []
+    
     # Construct a list of tuples of the form: (entropy,tweet)
     #  for each tweet in the cleaned corpus, where entropy is the
     #  average word for the tweet, and return the list of
     #  (entropy,tweet) tuples sorted by entropy
+    
+    for sent in list_of_tweets:
+        sent = [word.lower() for word in sent if word.isalpha()]
+        if len(sent)>=5:
+            entropy = np.mean([bigram_model.entropy(word, pad_left=True, pad_right=True, perItem=True) for word in sent])
+            cleaned_list_of_tweets.append((entropy,sent))
+    
+    cleaned_list_of_tweets.sort()
+    return cleaned_list_of_tweets
 
 
 # Question 3 [8 marks]
@@ -191,7 +205,15 @@ def open_question_3():
     :rtype: str
     :return: your answer [500 chars max]
     '''
-    return inspect.cleandoc("""...""")[0:500]
+    return inspect.cleandoc(
+        """
+        
+        The words at the beginning of the list are mostly just single letters and have lower entropies. Frequently used articles like 'a' and 'the', conjunctions like 'and', and short verbs like 'is' appear a lot of times.
+        Meanwhile, the words at the end of the list have a much longer length, non-English words, and are forms of connected words without a space in between.
+        They are not frequent in the corpus because they are not the normal usage of the words, and that leads to having higher entropies.
+        
+        """
+    )[0:500]
 
 
 # Question 4 [8 marks]
@@ -202,7 +224,14 @@ def open_question_4() -> str:
     :rtype: str
     :return: your answer [500 chars max]
     '''
-    return inspect.cleandoc("""...""")[0:500]
+    return inspect.cleandoc(
+        """
+        
+        1. Fix spellings or spaces by computing MED(minimum edit distance) via dynamic programming and apply costs for the computation by EM(Expectation Maximisation) Algorithm.
+        2. Eliminate non-English words by applying .isascii() method to the words, since they contain only American letters and some punctuations(these are already eliminated by the .isalpha() method)
+        
+        """
+    )[0:500]
 
 
 # Question 5 [15 marks]
@@ -219,30 +248,30 @@ def tweet_filter(list_of_tweets_and_entropies):
     :return: mean, standard deviation, ascii tweets and entropies,
              non-English tweets and entropies
     '''
-    raise NotImplementedError  # remove when you finish defining this function
+    # raise NotImplementedError  # remove when you finish defining this function
 
     # Find the "ascii" tweets - those in the lowest-entropy 90%
     #  of list_of_tweets_and_entropies
-    list_of_ascii_tweets_and_entropies = ...
-
+    ind = int(len(list_of_tweets_and_entropies) * 0.9)
+    list_of_ascii_tweets_and_entropies = list_of_tweets_and_entropies[:ind]
     # Extract a list of just the entropy values
-    list_of_entropies = ...
+    list_of_entropies = [tuple[0] for tuple in list_of_ascii_tweets_and_entropies]
 
     # Compute the mean of entropy values for "ascii" tweets
-    mean = ...
+    mean = np.mean(list_of_entropies)
 
     # Compute their standard deviation
-    standard_deviation = ...
+    standard_deviation = np.std(list_of_entropies)
 
     # Get a list of "probably not English" tweets, that is
     #  "ascii" tweets with an entropy greater than (mean + std_dev))
-    threshold = ...
-    list_of_not_English_tweets_and_entropies = ...
+    threshold = mean + standard_deviation
+    list_of_not_English_tweets_and_entropies = [tuple for tuple in list_of_ascii_tweets_and_entropies if tuple[0] > threshold]
 
     # Return mean, standard_deviation,
     #  list_of_ascii_tweets_and_entropies,
     #  list_of_not_English_tweets_and_entropies
-    return ...
+    return mean, standard_deviation, list_of_ascii_tweets_and_entropies, list_of_not_English_tweets_and_entropies
 
 
 # Question 6 [15 marks]
@@ -255,7 +284,24 @@ def open_question_6():
     :rtype: str
     :return: your answer [1000 chars max]
     """
-    return inspect.cleandoc("""...""")[:1000]
+    return inspect.cleandoc(
+        """
+        
+        1. Different corpus has different backgrounds, which means that they have different styles of language usage, for example, tweet texts and newspaper articles differ a lot.
+        => Assume that the given corpus represents the entire English.
+        
+        2. There are much more words that are not used in the given corpus.
+        => Assume that the given corpus contains every existing English word.
+        
+        3. It is not sure how many words you need to predict the next word.
+        => Assume that n-1 words will be sufficient to predict the next word that comes for the n-gram model. 
+        
+        
+        To solve the sparse data problem in #2 above, I would apply the appropriate smoothing method to my model.
+        Also, to choose which n to apply for the n-gram, I would compute per word entropy for different models like bigram, trigram, to 6-gram model and compare each entropy and pick the one with the lowest entropy value.        
+        
+        """
+    )[:1000]
 
 
 #############################################
@@ -288,7 +334,10 @@ class NaiveBayes:
         :rtype: set(any)
         :return: The set of all features used in the training data for all classes.
         """
-        raise NotImplementedError  # remove when you finish defining this function
+        # raise NotImplementedError  # remove when you finish defining this function
+        
+        return set((tag, word) for tuple in data for tag, word in tuple[0])
+
 
     @staticmethod
     def train(data, alpha, vocab):
@@ -313,12 +362,34 @@ class NaiveBayes:
             likelihood[c][f] = P(f|c)
         """
         assert alpha >= 0.0
-        raise NotImplementedError  # remove when you finish defining this function
-
+        # raise NotImplementedError  # remove when you finish defining this function
+        
         # Compute raw frequency distributions
-
+        prior = {}
+        for features,c in data:
+            prior[c] = prior[c]+1 if c in prior else 1
+            
+        denominator = len(data)
+        
+        for key, val in prior.items():
+            prior[key] = val / denominator
+    
+    
         # Compute prior (MLE). Compute likelihood with smoothing.
+        likelihood = {key: {(tag, word):alpha for tag, word in vocab} for key in prior.keys()}
+        
+        for f_list,c in data:
+            for feature in f_list:
+                if feature in vocab:
+                    likelihood[c][feature] += 1
 
+        for c in likelihood:
+            denominator = sum(likelihood[c].values())
+            for f in likelihood[c].keys():
+                likelihood[c][f] /= denominator
+        
+        return (prior, likelihood)
+        
 
     def prob_classify(self, d):
         """
@@ -328,7 +399,17 @@ class NaiveBayes:
         :rtype: dict(str, float)
         :return: The probability p(c|d) for all classes as a dictionary.
         """
-        raise NotImplementedError  # remove when you finish defining this function
+        # raise NotImplementedError  # remove when you finish defining this function
+                
+        prob = dict()
+        for c in self.prior.keys():
+            prob[c] = np.prod([self.likelihood[c][f] for f in d if f in self.vocab], initial = self.prior[c])
+            
+        denominator = sum(prob.values())
+        for c in prob.keys():
+            prob[c] = prob[c] / denominator if denominator else prob[c]
+            
+        return prob
 
     def classify(self, d):
         """
@@ -338,8 +419,10 @@ class NaiveBayes:
         :rtype: str
         :return: The most likely class.
         """
-        raise NotImplementedError  # remove when you finish defining this function
-
+        # raise NotImplementedError  # remove when you finish defining this function
+        post = self.prob_classify(d)
+        return max(post,key=post.get)
+        
 
 
 # Question 8 [10 marks]
@@ -349,7 +432,15 @@ def open_question_8() -> str:
     :rtype: str
     :return: Your answer of 500 characters maximum.
     """
-    return inspect.cleandoc("""...""")[:500]
+    return inspect.cleandoc(
+        """
+        
+        The accuracy of the top four features on the list is interpreted as which position's word gives the most confidence on PP decision.
+        Also, the last feature is word sets with position labeled, so that feature is determining how likely a particular word set will give you a VP or NP.
+        It has similar accuracy with Naive Bayes because both methods train the whole word groups, but the logistic regression model has a slightly higher accuracy because the order is fixed, giving slightly more information.
+        
+        """
+    )[:500]
 
 
 # Feature extractors used in the table:
@@ -390,8 +481,15 @@ def your_feature_extractor(v, n1, p, n2):
     :rtype: list(any)
     :return: A list of features produced by you.
     """
-    raise NotImplementedError  # remove when you finish defining this function
+    # raise NotImplementedError  # remove when you finish defining this function
 
+    lst = [
+        ("v", v), ("n1", n1), ("p", p), ("n2", n2),
+        ("v+n1", v+n1), ("n1+p", n1+p), ("p+n2", p+n2), ("v+p", v+p), ("n1+n2", n1+n2), ("v+n2", v+n2)
+        ]
+    
+    # return [lst[i] for i in [0,1,2,3,4,5,6,7,8,9,13]]
+    return lst
 
 # Question 9.2 [10 marks]
 def open_question_9():
@@ -402,7 +500,16 @@ def open_question_9():
     :rtype: str
     :return: Your answer of 1000 characters maximum.
     """
-    return inspect.cleandoc("""...""")[:1000]
+    return inspect.cleandoc(
+        """
+
+        In addition to using every single position as a feature, I used all of the combinations of two positions as features because it enables you to predict which word phrases are used in the sentence, giving a more reliable hint on guessing the preposition's usage.
+        Preposition word itself obviously is the biggest hint on predicting the result for example, 'of' or 'without'. 
+        Preposition combined with other positions, especially with verb ranks the top on the list, such as 'rose to' and 'fell to'.
+        These phrases reflect the context of the sentence and let you easily assume the next word, which also makes it easier to predict the sentence structure.
+
+        """
+    )[:1000]
 
 
 """
