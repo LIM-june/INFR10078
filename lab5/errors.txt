@@ -1,0 +1,441 @@
+There are 110 errors----------------------------
+1) example #: 18 
+ sentence: good looks , HARD body , clothes , money , cars , possessions , etc . , don 't even make the list . ''
+ guess: HARD2
+ label: HARD3
+2) example #: 28 
+ sentence: now an atlanta businessman , mr . scherer severed all ties with the company in 1979 in a dispute with some board members , including mr . fink , on how to run the maker of HARD - and soft-shell capsules used to hold drugs , vitamins and bath oil .
+ guess: HARD2
+ label: HARD3
+3) example #: 31 
+ sentence: `` it was HARD work six days a week , but it was a great experience and opened doors for me , " said the modest , soft-spoken lam .
+ guess: HARD1
+ label: HARD2
+4) example #: 32 
+ sentence: `` this ( elbow ) injury has been easier to take in some ways than the back problem , but HARDER in other ways , " montana said last week in one of his final pre-surgery interviews .
+ guess: HARD3
+ label: HARD1
+5) example #: 38 
+ sentence: remember , this is a curvy road with few HARD shoulders .
+ guess: HARD2
+ label: HARD3
+6) example #: 51 
+ sentence: no HARD ones to duck ; during jane pauley 's interview with pete rose ( to be telecast sunday ) , she asks charlie hustle if his agreeing to the interview was just a public relations `` hustle . ''
+ guess: HARD2
+ label: HARD1
+7) example #: 52 
+ sentence: to travel the road of hope and opportunity is HARD and difficult , but there is a chance that you might somehow , some way , with the help of god , make it .
+ guess: HARD3
+ label: HARD1
+8) example #: 59 
+ sentence: the standard , of course , is very different from the HARD , expensive glitter of west germany .
+ guess: HARD3
+ label: HARD2
+9) example #: 63 
+ sentence: and officials there have no incentive to look HARD at effectiveness ; drug programs are simply paying the air force and navy for the flying and steaming they would be doing anyway out of their own budgets .
+ guess: HARD1
+ label: HARD2
+10) example #: 75 
+ sentence: it was n 't so HARD before .
+ guess: HARD3
+ label: HARD1
+11) example #: 82 
+ sentence: `` sometimes , a rookie has to learn the HARD way , " padres manager greg riddoch said .
+ guess: HARD2
+ label: HARD1
+12) example #: 84 
+ sentence: these include covering a cake with a HARD glaze of sugar and gelatin or using wood as a temporary frame for floating sculptures .
+ guess: HARD2
+ label: HARD3
+13) example #: 85 
+ sentence: one of the HARDEST things he 's faced is losing some of his friends .
+ guess: HARD2
+ label: HARD1
+14) example #: 90 
+ sentence: -- loretta corrales ; san jose ; fiscal fiascoes hold economics lessons ; a HARD economics lesson is being learned by our federal , state and local agencies : you simply should not spend more money than you have .
+ guess: HARD2
+ label: HARD1
+15) example #: 91 
+ sentence: so i clung to this shadowy mardonius , simultaneously a HARD , noble greek soldier and a soft , curling-lipped persian tyrant ; bearded and clean-shaven ; on both sides at once , a faint ghost-mardonius in the sky ; a potentiality , only half-real .
+ guess: HARD1
+ label: HARD2
+16) example #: 100 
+ sentence: there was a HARD , bitter edge in his voice as he accused federal prosecutors of hounding him while ignoring wrongdoing by white officials .
+ guess: HARD3
+ label: HARD2
+17) example #: 106 
+ sentence: and one of the HARDEST is what to do about career planning when both wife and husband are on a fast track .
+ guess: HARD3
+ label: HARD1
+18) example #: 122 
+ sentence: voting against seeking additional sources of funds was supervisor ray belgard , who told his colleagues , `` we have to face the HARD facts of life .
+ guess: HARD2
+ label: HARD1
+19) example #: 153 
+ sentence: they found that a way to get a pretty tomato to market was to pick HARD , unripe ones and gas them red .
+ guess: HARD1
+ label: HARD3
+20) example #: 154 
+ sentence: the question of japanese attendance at the pearl harbor commemoration was a HARD call for organizers .
+ guess: HARD3
+ label: HARD1
+21) example #: 166 
+ sentence: with a HARD eye , she informed moll : `` don 't sure 'nuff me , officer .
+ guess: HARD3
+ label: HARD2
+22) example #: 191 
+ sentence: on march 27 , 1990 , its main policy committee faced a HARD question : was economic activity slowing so much that the fed needed to stimulate it or was growth still strong enough to avoid recession ?
+ guess: HARD2
+ label: HARD1
+23) example #: 197 
+ sentence: first interstate bancorp , HARD hit by bad real estate loans , has announced that it will eliminate 3 , 500 jobs by the end of the year and reorganize its sprawling 13-state operation in an effort to cut $ 250 million a year in costs .
+ guess: HARD3
+ label: HARD1
+24) example #: 200 
+ sentence: one recession lesson that many businesses learned the HARD way is not to play it too close to the edge .
+ guess: HARD2
+ label: HARD1
+25) example #: 201 
+ sentence: if necessary , trim it by using the straightedge and a fresh knife blade , or by rubbing it against fine-grit sandpaper laid flat on a HARD work surface .
+ guess: HARD2
+ label: HARD3
+26) example #: 230 
+ sentence: the town has a variety of rates based on flatland areas and HARD to-serve areas , but the most common service is for two cans per household , which will go from $ 10 . 30 to $ 11 . 72 per month .
+ guess: HARD3
+ label: HARD1
+27) example #: 231 
+ sentence: it was a HARD decision , but i think it 's better to leave the coaching to the young turks . ''
+ guess: HARD3
+ label: HARD1
+28) example #: 239 
+ sentence: about $ 1 billion of the value came from `` HARD '' assets ( factories , offices , paper clips , personal computers , cheese ) .
+ guess: HARD3
+ label: HARD2
+29) example #: 243 
+ sentence: times being HARD , and distance and expense outweighing fond sentiment , the regrets are 100 percent .
+ guess: HARD3
+ label: HARD1
+30) example #: 249 
+ sentence: `` it 's been one of the HARDEST things , " beckenhauer-heller said .
+ guess: HARD2
+ label: HARD1
+31) example #: 255 
+ sentence: they lugged around fat binders of handouts and extra backpacks of books , slogged through their HARDEST subjects in the decathlon curriculum -- science and mathematics -- and passed up dates .
+ guess: HARD2
+ label: HARD1
+32) example #: 259 
+ sentence: flores , who has been using the program since last summer said the free lunches have helped her family cope with HARD economic times .
+ guess: HARD2
+ label: HARD1
+33) example #: 276 
+ sentence: ( when the whores are hauled off to prison , stripped of wigs and makeup in the HARD light of day , they look like that ragtag group of washington hookers marched across a potomac river bridge by the d . c . police a couple of years ago . )
+ guess: HARD3
+ label: HARD2
+34) example #: 281 
+ sentence: despite HARD financial times , the county last year handed out $ 550 `` bonuses '' to each of its 2 , 000 managers , they said .
+ guess: HARD2
+ label: HARD1
+35) example #: 286 
+ sentence: and , as everyone knows , joseph schildkraut won best supporting actor for 'the life of emile zola , ' not for 'romance of radium . ' " ; veteran oscar-watchers , i 've learned ( the HARD way ) , are n 't very forgiving .
+ guess: HARD2
+ label: HARD1
+36) example #: 292 
+ sentence: the first issue included a news story on a major sale of vintage jerseys , a background piece on the unique style of HARD to-find 1970 cleveland indians shirts and a short list of 1991 uniform changes .
+ guess: HARD2
+ label: HARD1
+37) example #: 316 
+ sentence: i don 't believe you could argue with the basic message of either book : that somehow the HARD face of american capitalism needs to be softened , feminized if you will .
+ guess: HARD2
+ label: HARD3
+38) example #: 319 
+ sentence: but when she finished his eyes were HARD .
+ guess: HARD1
+ label: HARD2
+39) example #: 320 
+ sentence: q my new 1990 nissan HARD body pickup throws out heavy , black smoke in the cool mornings .
+ guess: HARD1
+ label: HARD3
+40) example #: 337 
+ sentence: he was an honest man doing a HARD job , and the implication that he was anything else was unbearable .
+ guess: HARD2
+ label: HARD1
+41) example #: 354 
+ sentence: john devitt says he learned the HARD way that some large corporations will do anything for a buck .
+ guess: HARD2
+ label: HARD1
+42) example #: 360 
+ sentence: `` i want to work very HARD for the next four , five years and be able around 65 to say to myself , 'ok , you should slow down . '
+ guess: HARD1
+ label: HARD2
+43) example #: 365 
+ sentence: `` we learned the HARD way that you can 't celebrate until the final whistle , " he said .
+ guess: HARD2
+ label: HARD1
+44) example #: 372 
+ sentence: movies are supposed to thrive during HARD economic times .
+ guess: HARD2
+ label: HARD1
+45) example #: 380 
+ sentence: silicon carbide 's problem is that , because it 's so HARD , it 's also brittle , and thus vulnerable to impact stresses .
+ guess: HARD1
+ label: HARD3
+46) example #: 383 
+ sentence: when we become firm enough to stand for those ideals which we know to be right , when we become HARD enough to refuse to aid nations which do not permit self-determination , when we become strong enough to resist any more drifts towards socialism in our own nation , when we recognize that our enemy is communism not war , and when we realize that concessions to communists do not insure peace or freedom , then , and only then will we no longer be `` soft '' .
+ guess: HARD1
+ label: HARD2
+47) example #: 398 
+ sentence: like amoebas , plasmodia can enter HARD , resistant resting states , called sclerotia , when conditions are bad .
+ guess: HARD1
+ label: HARD3
+48) example #: 401 
+ sentence: it is used for making buttons and other small , HARD objects of turnery .
+ guess: HARD2
+ label: HARD3
+49) example #: 404 
+ sentence: the situation is an excellent example of durkheim 's anomy , social disorganization at all levels - `` norms '' are HARD or impossible to find and the psychologist can not , for long , hold many preconceptions .
+ guess: HARD3
+ label: HARD1
+50) example #: 410 
+ sentence: tom fast , of scotts valley , stepped out of the crowd into a HARD embrace .
+ guess: HARD3
+ label: HARD2
+51) example #: 428 
+ sentence: ohio state 's jim jackson , who led the team with 19 points , said : `` it 's really frustrating to go out this way after as HARD as we 've worked all year .
+ guess: HARD3
+ label: HARD2
+52) example #: 429 
+ sentence: since her july blackout , she -- like thousands of california motorists in similar circumstances -- learned the HARD way about the department of motor vehicles ' little known system that requires doctors to report to state officials the patients they have treated for lapses of consciousness .
+ guess: HARD2
+ label: HARD1
+53) example #: 430 
+ sentence: she 's also HARD at work on an autobiography .
+ guess: HARD1
+ label: HARD2
+54) example #: 440 
+ sentence: the seeds of HARD , fibrous , stony fruits , called nuts , provide highly concentrated foods , oils , and other materials of value .
+ guess: HARD2
+ label: HARD3
+55) example #: 443 
+ sentence: president bush has until june 3 to make what he has called a HARD decision on whether to renew low tariff rates for chinese goods .
+ guess: HARD2
+ label: HARD1
+56) example #: 464 
+ sentence: and so you did of me , jane thought , with a sudden , uncharacteristically HARD perception .
+ guess: HARD3
+ label: HARD2
+57) example #: 465 
+ sentence: his father , who was HARD at work at his desk , did n 't notice the time passing and it was well past six when he looked at the clock .
+ guess: HARD1
+ label: HARD2
+58) example #: 468 
+ sentence: `` a few people tried to give me a HARD time , " he said .
+ guess: HARD2
+ label: HARD1
+59) example #: 510 
+ sentence: note : cinnamon red hots are small red candies slightly HARDER than jelly beans , available in the baking section of supermarkets .
+ guess: HARD1
+ label: HARD3
+60) example #: 528 
+ sentence: formosan termites have HARDER mandibles , the better for tearing off chunks of soft metal , and their colonies run to the tens of millions , compared with the subterraneans who are content to stay in the hundreds of thousands .
+ guess: HARD2
+ label: HARD3
+61) example #: 536 
+ sentence: for a HARD kernel of uncertainty chafes beneath our well-being , mr . president .
+ guess: HARD2
+ label: HARD3
+62) example #: 540 
+ sentence: the programs are operated by a mouse , feature a lot of color and snazzy graphics , and have extensive tutorials and other features to walk users through the HARD parts .
+ guess: HARD2
+ label: HARD1
+63) example #: 545 
+ sentence: i did n 't want him to be a black bat ; i wanted him to be someone with whom the reader could identify ; someone who has had a HARD life . ''
+ guess: HARD2
+ label: HARD1
+64) example #: 546 
+ sentence: 'not a lot of heroes ' ; harlow , 47 , one of a handful of volcano seismologists in the world , discounted his `` indiana jones '' reputation and said the successful forecast and evacuation was the result of `` a lot of people taking a lot of responsibility and making HARD decisions .
+ guess: HARD3
+ label: HARD1
+65) example #: 547 
+ sentence: to wit : you will never have to learn anything the HARD way .
+ guess: HARD2
+ label: HARD1
+66) example #: 556 
+ sentence: for playing the leading parts of two c . o . 's of a highland regiment are alec guinness and john mills , the one having won the affection of his men by leading them through the war , and the other a HARD , efficient newcomer who is heartily disliked by the majority of the soldiers .
+ guess: HARD3
+ label: HARD2
+67) example #: 557 
+ sentence: `` and on the HARDER dives , i still get nervous . ''
+ guess: HARD3
+ label: HARD1
+68) example #: 559 
+ sentence: whereas everything in boccaccio is HARD , elegant and general , in chaucer it is muted , peculiar , full of objects that are unexpected and yet oddly characteristic . ''
+ guess: HARD1
+ label: HARD2
+69) example #: 561 
+ sentence: it 's kind of HARD when your toes don 't work . ''
+ guess: HARD2
+ label: HARD1
+70) example #: 567 
+ sentence: `` it 's a HARD , rough ride but it 's got a lot of power and it 's amazing how much the aircraft can take .
+ guess: HARD1
+ label: HARD2
+71) example #: 575 
+ sentence: to those of us who have spent years observing these animals , the general rule is that they place a flat rock on their chest against which they bang HARD shelled molluscs such as clams .
+ guess: HARD1
+ label: HARD3
+72) example #: 578 
+ sentence: last winter 's HARD frost caused some of the new growth tips to go limp , but they quickly recovered .
+ guess: HARD1
+ label: HARD3
+73) example #: 580 
+ sentence: the hulking , bald foreman whom the folks saw fight qawi is a different fella from the HARD muscled young champ whose place in history rests largely on two fights , one that he won and one he lost .
+ guess: HARD2
+ label: HARD3
+74) example #: 581 
+ sentence: once your tummy is HARD enough , they 'll stop the faucet and push on your tummy so you 'll throw up all the water . ''
+ guess: HARD1
+ label: HARD3
+75) example #: 589 
+ sentence: ( box ) for a HARD crust , bake bread until it feels like a brick because crust softens as it cools .
+ guess: HARD3
+ label: HARD1
+76) example #: 590 
+ sentence: `` he 's real caring and giving , " said jennine zinner , a fellow counselor at the south county center , `` but also cynical , embittered by a HARD life .
+ guess: HARD2
+ label: HARD1
+77) example #: 596 
+ sentence: prime minister p . v . narasimha rao told india on saturday that it faced a serious economic crisis that could only be resolved by HARD decisions , new foreign investment and an end to the inefficiency that cripples the country 's growth .
+ guess: HARD2
+ label: HARD1
+78) example #: 609 
+ sentence: `` but trying to put it into HARD points , and number of victories , that 's really tough . # # #
+ guess: HARD1
+ label: HARD2
+79) example #: 611 
+ sentence: these cookies start out HARD and soften as they mature .
+ guess: HARD1
+ label: HARD3
+80) example #: 620 
+ sentence: but should a HARD winter bring mobs into the streets , or an assassination or coup suddenly remove either man , bush could have to order those b-52s back on 15-minute alert .
+ guess: HARD3
+ label: HARD1
+81) example #: 626 
+ sentence: `` he has been likened to ronald reagan , a populist with no real interest in the details of government and HARD intellectual work , " sonnenfeldt said .
+ guess: HARD1
+ label: HARD2
+82) example #: 638 
+ sentence: plummer a cal walk-on ; linebacker gary plummer made the pros the HARD way .
+ guess: HARD2
+ label: HARD1
+83) example #: 647 
+ sentence: `` this program is HARD work .
+ guess: HARD2
+ label: HARD1
+84) example #: 650 
+ sentence: but the secret itself was just as HARD .
+ guess: HARD3
+ label: HARD1
+85) example #: 652 
+ sentence: the HARD way of peace .
+ guess: HARD2
+ label: HARD1
+86) example #: 654 
+ sentence: it also makes the job HARD .
+ guess: HARD3
+ label: HARD1
+87) example #: 655 
+ sentence: i thought the mezz amore -- made with almonds and bittersweet chocolate -- were too HARD and dry .
+ guess: HARD3
+ label: HARD1
+88) example #: 661 
+ sentence: tip : money workshop ; c onsumer credit counseling service of santa clara valley will present a free workshop on managing money during HARD economic times on saturday , april 13 , from 9 a . m . to noon at the sunnyvale senior citizen center , 820 mckinley st . , room 201 , sunnyvale .
+ guess: HARD2
+ label: HARD1
+89) example #: 664 
+ sentence: `` it 's HARD on you physically .
+ guess: HARD1
+ label: HARD2
+90) example #: 680 
+ sentence: but HARD lines are n 't hook 's style .
+ guess: HARD3
+ label: HARD2
+91) example #: 694 
+ sentence: my brother told me that he heard from an electronic technician that 8mm camcorders are HARDER and more costly to fix .
+ guess: HARD3
+ label: HARD1
+92) example #: 704 
+ sentence: the boy tried to make the age-changing voice sound HARD , and it might have sounded ludicrous had it not been for the reckless chill shimmering in cat-yellow eyes .
+ guess: HARD3
+ label: HARD2
+93) example #: 705 
+ sentence: pinedo says he 's learned the HARD way that living with hiv can be a roller-coaster ride .
+ guess: HARD2
+ label: HARD1
+94) example #: 706 
+ sentence: `` they 're very HARD but can have a lot of cracks and fractures , and sometimes pieces will break off . ''
+ guess: HARD2
+ label: HARD3
+95) example #: 712 
+ sentence: being tough is obviously a lot HARDER when your subject is right next to you rather than staring into a camera in a different room .
+ guess: HARD3
+ label: HARD1
+96) example #: 714 
+ sentence: ( box ) sun hong kong restaurant , 91 shattuck square ( i . e . , shattuck avenue at addison ) , berkeley , ( 510 ) 841-2288 , is a bright , HARD surfaced , contemporary chinese cafe that fills its two small floors of tables until 2 a . m . by selling a long and interesting menu supplemented by a separate menu of soups , noodle dishes and rice plates at extremely low prices .
+ guess: HARD2
+ label: HARD3
+97) example #: 715 
+ sentence: `` the one thing there was universal support for was the fact that he had been through a HARD time . ''
+ guess: HARD2
+ label: HARD1
+98) example #: 735 
+ sentence: although the palo alto medical foundation already won city council approval for its planned expansion project , it is learning the HARD way that the situation is anything but settled .
+ guess: HARD2
+ label: HARD1
+99) example #: 757 
+ sentence: after the first blush of allied unity , look for a divergence of views between washington and berlin on how to deal with the HARD new men in the kremlin .
+ guess: HARD3
+ label: HARD2
+100) example #: 762 
+ sentence: lenses sold for long-term wear come in a HARD platic case or glass vials that last the entire life of the lens .
+ guess: HARD2
+ label: HARD3
+101) example #: 773 
+ sentence: remove the HARD outer shell of the acorn with a nut cracker .
+ guess: HARD1
+ label: HARD3
+102) example #: 798 
+ sentence: a this is a HARDER question , because while the oil and gasoline markets are closely linked , they do not track each other exactly .
+ guess: HARD3
+ label: HARD1
+103) example #: 813 
+ sentence: oak , one of the HARDEST trees in california , is valued for its long burn in the hearth .
+ guess: HARD1
+ label: HARD3
+104) example #: 820 
+ sentence: `` where we will be going today , " johnson said before the ride , `` is about a two on a scale of one to 10 ( 10 being the HARDEST ) .
+ guess: HARD3
+ label: HARD1
+105) example #: 842 
+ sentence: `` it 's been a long , HARD fight .
+ guess: HARD2
+ label: HARD1
+106) example #: 850 
+ sentence: if starting seeds sounds too HARD or your garden is very small , use started seedlings in six-packs .
+ guess: HARD3
+ label: HARD1
+107) example #: 852 
+ sentence: `` this has been the most thrilling year of my life and the HARDEST . ''
+ guess: HARD3
+ label: HARD1
+108) example #: 863 
+ sentence: while bush gave iran a pat on the back , his spokesman struck a HARDER tone .
+ guess: HARD3
+ label: HARD2
+109) example #: 865 
+ sentence: the `` suite of old russian dances '' that opened that inaugural program with the slow and modest entrance of the maidens and built steadily into typical moiseyev vigor and warmth ; the amusing `` yurochka '' , in which a HARD to-please young man is given his come-uppance ; the lovely ( and of course vigorous ) `` polyanka '' or `` the meadow '' ; the three moldavian dances entitled `` zhok '' ; the sweet and funny little dance about potato planting called `` bul 'ba '' ; and the hilarious picture of social life in an earlier day called `` city quadrille '' are all just as good as one remembers them to have been , and they are welcome back .
+ guess: HARD2
+ label: HARD1
+110) example #: 866 
+ sentence: her mother said in scandalized tones that money was n 't everything and thought how HARD her daughter had become .
+ guess: HARD1
+ label: HARD2
